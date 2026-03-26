@@ -1,0 +1,26 @@
+# Core agent framework
+crewai>=0.28.0
+crewai-tools>=0.1.0
+
+# LangChain ecosystem (all required sub-packages)
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-chroma>=0.1.0
+langchain-text-splitters>=0.2.0
+langchain-google-genai>=1.0.0
+
+# Vector store — pinned to last stable pure-Python backend.
+# chromadb 0.6+ introduced a Rust binding layer with a known Rust panic
+# ("range start index out of range") on Windows. 0.4.24 is the last
+# version guaranteed to work cross-platform without the Rust backend.
+chromadb==0.4.24
+
+# Search tools
+duckduckgo-search>=4.0.0
+
+# UI
+streamlit>=1.35.0
+
+# Utilities
+python-dotenv>=1.0.0
